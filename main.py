@@ -1,55 +1,28 @@
-import random
+# Great terminal color code explanation article: https://stackoverflow.com/questions/4842424/list-of-ansi-color-escape-sequences#4842446. 
+
 import os
-import time
 
-print("! Initilazing...")
+def printIntroText():
+    print("\033[93m" + "================================================== \n_______     _       ______    ______  ____  ____  \n|_   __ \   / \    .' ____ \ .' ____ \|_  _||_  _| \n  | |__) | / _ \   | (___ \_|| (___ \_| \ \  / /   \n  |  ___/ / ___ \   _.____`.  _.____`.   \ \/ /  \n _| |_  _/ /   \ \_| \____) || \____) |  _|  |_ \n|_____||____| |____|\______.' \______.' |______| \n==================================================" + "\033[0m")
+    print("Welcome to passy, the ULTIMATE password guessing, computer smashing game! So, how does this work? Simple, pick a mode and either make the computer guess a password or you take a shot yourself.\nIn any case, it ain't gonna be easy, so good luck!")
 
-def generateRandomPass(length):
-    usableCharacterSet = "0123456789abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ"
-    passowrd = ""
-    for i in range (size):
-        charToTake = random.randint(0, int(len(usableCharacterSet)) - 1)
-        passowrd += usableCharacterSet[charToTake]
-    return passowrd
+def printCategoryText():
+    print("\nHere are the available categories, please pick one by typing the number next to it:\n1) Computer vs Computer\n2) Computer vs Player")
 
-def generateGuess(length):
-    usableCharacterSet = "0123456789abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ"
-    guess = ""
-    for i in range (size):
-        charToTake = random.randint(0, int(len(usableCharacterSet)) - 1)
-        guess += usableCharacterSet[charToTake]
-    return guess
+def computerVsComputerModes():
+    print("Great choice! Here are the available modes for 'Computer vs Computer':\n")
 
-def printStart():
+os.system("cls")
+printIntroText()
+printCategoryText()
+
+categoryChoice = int(input("\033[36m" + "\n? Pick a mode: " + "\033[0m"))
+
+while categoryChoice > 2:
     os.system("cls")
-    print("=========================PASSY [V0.1.0]=========================")
-    print("Welcome to passy, the ULTIMATE battle between a computer and a computer! That's right, the computer fights itself, but how?\n\nPassy is a password guessing game where the computer will generate a random passowrd, the size of which will be your choice, and then it tries to guess it. How fun!\n\nTo begin, input the password size below!")
-    print("================================================================")
+    print("\033[31m" + "\n==================================\n! Invalid input, please try again.\n==================================" + "\033[0m")  
+    printCategoryText()
+    categoryChoice = int(input("\033[36m" + "\n? Pick a mode: " + "\033[0m"))
 
-def guess():
-    toGuess = generateRandomPass(size)
-    currentGuess = ""
-    passCounter = 1
-    startTime = time.time()
-    endTime = time.time()
-    while toGuess != currentGuess:
-        currentGuess = generateGuess(size)
-        endTime = time.time()
-        timeCount = endTime - startTime
-        
-        print("| Attempt:", str(passCounter), "| Guess: ", currentGuess, "| Generated Password:", toGuess, "| Time:", str(timeCount), "sec |")
-
-        passCounter += 1
-
-    print("Attempt:", str(passCounter), "| Guess: ", currentGuess, "| Generated Password:", toGuess, "| Time:", str(timeCount), "sec |")
-
-printStart()
-size = int(input("? Password Size: "))
-guess()
-
-
-
-
-
-
-
+if categoryChoice == 1:
+    computerVsComputerModes()
