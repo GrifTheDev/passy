@@ -26,3 +26,10 @@ To run from source, click the green `Code` button on the top of the webpage and 
 ```bash
 $ python main.py
 ```
+
+## You evil developer, my antivirus says Passy is a virus! (Compiled Binary Only)
+No, this is not the case. If your antivirus is detecting Passy as a virus, you can safely ignore the message. 
+
+Why does your antivirus detect Passy as a virus? Because the compiled version is simply extracting binary code, from which it was compiled. This falsely triggers your antivirus, into thinking that Passy is a virus. 
+
+Still think Passy is a virus? Check the source code above for yourself!
