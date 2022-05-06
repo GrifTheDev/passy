@@ -33,3 +33,5 @@ No, this is not the case. If your antivirus is detecting Passy as a virus, you c
 Why does your antivirus detect Passy as a virus? Because the compiled version is simply extracting binary code, from which it was compiled. This falsely triggers your antivirus, into thinking that Passy is a virus. 
 
 Still think Passy is a virus? Check the source code above for yourself!
+
+<b>STILL</b> think Passy is a virus? Follow the instructions from the `Running from source (Linux, MacOS)` section, to run only the source code above.
