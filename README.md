@@ -2,7 +2,7 @@
 
 <p align="center">
     <b>
-       Ever wondered if you could guess a password? Or if those randomly generated passwords are actully secure? Well, look no further than Passy. Enjoy destroying your computer by trying to guess a password in tons of different ways.
+       Ever wondered if you could guess a password? Or if those randomly generated passwords are actually secure? Well, look no further than Passy. Enjoy destroying your computer by trying to guess a password in tons of different ways.
        <br>
        <br>
        ⚠️ Warning: Passy is still in a pre-release version, so expect some bugs and unfinised features.
