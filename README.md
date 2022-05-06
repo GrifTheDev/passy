@@ -20,7 +20,7 @@ For most, the first option will sufice. To get the `.exe` file, go to the `Relea
 
 ### Running from source (Linux, MacOS)
 
-Please ensure you have the Python installed on your machine before proceeding.
+Please ensure you have Python installed on your machine before proceeding.
 
 To run from source, click the green `Code` button on the top of the webpage and then click on the `Download Zip` button. This will download a zip file containing the source code. Once the zip file is downloaded, extract it and open a terminal inside the folder. From the terminal run (without the $):
 ```bash
